@@ -75,8 +75,8 @@ module.exports = function(app){
                 stops: 0,
                 departureTerminal: 2,
                 arrivalTerminal: 1,
-                departureTime: "2020-04-17T18:10:00.000",
-                arrivalTime: "2020-04-18T06:20:00.000",
+                departureTime: "2021-04-10T18:10:00.000",
+                arrivalTime: "2021-04-11T06:20:00.000",
                 flightcost: 200,
                 capacity: 2
              }
@@ -117,14 +117,14 @@ module.exports = function(app){
         }
         function toDate(date,time){
             if(date>61) {
-                base = "2020-06-";
+                base = "2021-05-";
                 date = date - 61;
             }
             else if(date>30) {
-                base = "2020-05-";
+                base = "2021-04-";
                 date = date - 30;
             }
-            else base = "2020-04-";
+            else base = "2021-03-";
             return(base + numberToDay(date.toString()) 
                    + "T" +numberToDay(time.toString()) +":00:00Z"); 
         }
